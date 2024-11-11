@@ -26,7 +26,7 @@ headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 
 
 
-
+#更改你自己想要的bv号码
 bv = "BV1Ccm1YdEKz"
 
 url = url + f"/{bv}"
