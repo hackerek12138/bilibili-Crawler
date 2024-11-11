@@ -1,9 +1,8 @@
 # bilibili-Crawler
-哔哩哔哩视频爬虫
-项目概述
+# 项目概述
 本项目是一个Python脚本，用于从Bilibili（哔哩哔哩）网站爬取指定视频的视频流和音频流，并将其保存为本地文件。脚本利用requests库发送HTTP请求，使用正则表达式（re模块）解析HTML内容，并通过json模块处理JSON数据。
 
-依赖库
+# 依赖库
 requests：用于发送HTTP请求。
 re：用于正则表达式匹配和解析HTML内容。
 json：用于处理JSON数据。
@@ -11,7 +10,7 @@ json：用于处理JSON数据。
 
 bash
 pip install requests
-使用说明
+# 使用说明
 配置Cookie：
 你需要提供一个有效的Bilibili Cookie，以便脚本能够模拟登录状态并访问需要权限的内容。
 将cookie变量的值替换为你自己的Bilibili Cookie。
@@ -20,7 +19,7 @@ pip install requests
 更改bv变量的值为你想要爬取的视频的BV号。
 运行脚本：
 直接运行脚本文件。脚本将发送HTTP请求到Bilibili，解析视频和音频的URL，并将它们保存为本地文件。
-脚本流程
+# 脚本流程
 发送请求：
 使用requests.get方法发送GET请求到指定的Bilibili视频页面。
 请求头中包含用户代理（User-Agent）和Cookie，以模拟登录状态。
@@ -33,7 +32,7 @@ pip install requests
 下载并保存文件：
 发送请求到视频和音频的URL，获取视频和音频内容。
 将视频内容保存为.mp4文件，将音频内容保存为.mp3文件。
-注意事项
+# 注意事项
 Cookie有效性：
 确保提供的Cookie是有效的，并且没有过期。
 如果Cookie失效，你可能需要重新登录Bilibili并获取新的Cookie。
